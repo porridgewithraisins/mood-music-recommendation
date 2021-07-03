@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='./css/styles.css') }}">
+    </head>
+    <h1>UPLOAD AN IMAGE</h1>
+    <body>
+        <form action = "{{url_for('mood.result')}}" method="POST" enctype="multipart/form-data">
+            <input type="file" class = 'file-input' name = "file"/>
+            <input type="submit" class = 'file-upload' value="upload"/>
+        </form>
+    </body>
+</html>

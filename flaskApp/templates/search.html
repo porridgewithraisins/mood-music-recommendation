@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='./css/styles.css') }}">
+    </head>
+    <body>
+        <h1>
+            Search the Database
+        </h1>
+        <div class="search-container">
+            <form action="{{url_for('search.result')}}" method="POST"
+            autocomplete = "off">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="song">Song Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="song" name="song"
+                        placeholder="any part of the song's name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="artist">Artist Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="artist" name="artist"
+                        placeholder="any part of the artist's name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="year">Year</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id = "year" name="year"
+                        placeholder="yyyy">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="mood">Mood</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id = "mood" name="mood" 
+                        placeholder="Happy, Sad, Energetic or Calm">
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

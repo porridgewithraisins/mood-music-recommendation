@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.button {
+    border:none;
+    color: black;
+    padding: 50px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 250px;
+    top:400px;
+    background-color: #5E81AC;
+    border-radius: 12px;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.15em;
+  }
+  
+.button:hover {
+    background-color: #88C0D0;
+    color: black;
+    border-radius: 18px;
+}
+
+.button1 {
+    position: absolute;
+    left: 15%;
+}
+
+
+.button2 {
+    position: absolute;
+    right: 15%;
+}
+
+
+.button3{
+    margin : auto;
+    margin-top: 10%;
+    top: 50%;
+    display: block;
+}
+
+h1{
+    text-align: center;
+    padding-top: 15%;
+    color: #ECEFF4;
+    font-family: 'Space Mono', monospace;
+}
+body{
+    background-color:#2E3440;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ECEFF4;
+    outline: none;
+    color: #ECEFF4;
+    font-family: 'Space Mono', monospace;
+  }
+  
+  /* Style the label to display next to the inputs */
+label {
+    color:#ECEFF4;
+    padding: 22px 12px 12px 0px;
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+    /* margin-top: 10%; */
+}
+  
+  /* Style the submit button */
+input[type=submit] {
+    background-color: #5E81AC;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+.search-container {
+    border-radius: 5px;
+    padding-left: 25%;
+    width: 50%;
+}
+  
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.file-input, .file-upload {
+    padding: none;
+    margin-top: 10%;
+    margin-right: 30%;
+    float:none;
+}
+
+a{
+    text-decoration:wavy
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    input[type="text"]{
+        padding:0px;
+    }
+    input[type="submit"]{
+        margin-top: 40px;
+    }
+    .search-container{
+        padding-top: 10%;
+    }
+    h1{
+        padding-top: 5%;
+    }
+}
+
+::placeholder{
+    color:#E5E9F0;
+    opacity: 0.49;
+}
