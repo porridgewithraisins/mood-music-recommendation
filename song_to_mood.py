@@ -6,8 +6,6 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
 import tensorflow as tf
-tf.compat.v1.disable_eager_execution()
-tf.compat.v1.disable_v2_behavior()
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder,MinMaxScaler
 from sklearn.pipeline import Pipeline
