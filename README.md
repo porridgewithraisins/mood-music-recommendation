@@ -11,5 +11,5 @@ The face-to-mood bit is done with [FER](https://pypi.org/project/fer/)\
 The song-to-mood bit was done with tensorflow. I used this dataset at [Kaggle](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks?select=tracks.csv)  
 
 
-Uses SQLite3 and Flask\
+Uses SQLite3 and Flask
 
