@@ -3,12 +3,15 @@
 ### Written in python, with SQLite3, Flask and Tensorflow
 
 #### Install
-Extract the contents of csv_files.zip into flaskApp/csv_files.
-
-Then, from the folder where the flaskApp directory lies, start a virtual environment (recommended as machine learning packages are thicc)
+```bash
+git clone https://github.com/porridgewithraisins/mood-music-recommendation.git
+cd mood-music-recommendation
+unzip csv_files.zip -d flaskApp/csv_files
+```
+Then, start a virtual environment (recommended as machine learning packages are thicc)
 ```bash
 python3 -m venv venv
-sh venv/bin/activate
+source venv/bin/activate
 ```
 Then install dependencies,
 
@@ -29,8 +32,11 @@ The song-to-mood bit was done with tensorflow. I used this dataset at [Kaggle](h
 
 
 Demo:
+
 ![26th-21 17](https://user-images.githubusercontent.com/72668511/130995162-e06b052c-f62c-4c3b-9026-1b8705d23db3.gif)
 
+
 You can also perform a fuzzy search of the entire database
+
 ![26th-21 19](https://user-images.githubusercontent.com/72668511/130996179-bb3e5aba-81ce-4d66-8cea-cbb5112c3c0f.gif)
 
