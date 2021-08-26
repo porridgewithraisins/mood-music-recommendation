@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="{{ url_for('static', filename='./css/styles.css') }}">
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='./css/styles.css') }}"
+        />
     </head>
     <h1>UPLOAD AN IMAGE</h1>
     <body>
-        <form action = "{{url_for('mood.result')}}" method="POST" enctype="multipart/form-data">
-            <input type="file" class = 'file-input' name = "file"/>
-            <input type="submit" class = 'file-upload' value="upload"/>
+        <form
+            action="{{url_for('mood.result')}}"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+            <label id="upload-label" for="file-input">Upload Photo</label>
+            <input type="file" id="file-input" name="file" />
+            <input
+                type="submit"
+                id="upload-btn"
+                class="file-upload"
+                value="upload"
+            />
         </form>
     </body>
+    <script>
+        const fileUpload = document.getElementById("file-input");
+        const uploadLabel = document.getElementById("upload-label");
+        fileUpload.onchange = (_e) => {
+            const name = fileUpload.files[0].Name;
+            if (name === undefined) {
+                uploadLabel.innerText = "Upload Photo";
+            } else {
+                uploadLabel.innerText = name;
+            }
+            document.getElementById("upload-btn").click();
+        };
+        document.getElementById("upload-btn").addEventListener('click',() => {
+            const form = document.querySelector('body > form');
+            form.submit();
+            const load = document.createElement('div');
+            load.id = 'load';
+            document.body.appendChild(load);
+        });
+    </script>
 </html>
